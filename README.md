@@ -9,7 +9,7 @@ With early detection of heart disease considered vital for successful clinical i
 
 ## Motivation 
 Using the publicly available Heart Failure Prediction dataset [4], containing various clinical variables of people with and without heart disease, I aim to design a 
-supervised machine learning model which can be used to accurately predict heart disease. This project is a binary classification model, with the aim to predict incidence 
+supervised machine learning model which can be used to accurately predict heart disease. This project is a binary classification, with the aim to predict incidence 
 of heart disease based on multiple clinical variables. Annotated code has been written using a Jupyter notebook (version 3.2.1.) using Python 3.9.7. 
 
 I have first pre-processed the data, checking for missing or null values, and checking the distribution of the variables in the dataset.
@@ -19,12 +19,14 @@ imported from SciKit Learn [5] and compared using model scores and ROC curves to
 
 To run:
 1.	Download Heart Failure Prediction dataset “heart.csv” (originally downloaded from Kaggle: https://www.kaggle.com/fedesoriano/heart-failure-prediction). 
-2.	Open jupyter notebook "DataScienceAssessment" and check file path to ensure heart.csv file is read in correctly. 
-3.	Run entire notebook, generating following outputs: import of pandas, NumPy, matplotlib, seaborn and SciKit learn libraries [5-10], correlation matrix, scatter matrix, graphical analyses of relationship between target variable heart disease and explanatory variables, 5 binary classification models (Logistic Regression, Naïve Bayes, KNearest Neighbors, SVC and Decision Trees), confusion matrix comparing model scores and ROC curves comparing each model. 
+2.	Open jupyter notebook "DataScienceAssessment" and check file path to ensure "heart.csv" file is read in correctly. 
+3.	Run entire notebook, generating following outputs: import of pandas, NumPy, matplotlib, seaborn and SciKit learn libraries [5-10], correlation matrix, scatter matrix, graphical analyses of relationship between target variable heart disease and explanatory variables, generation of 5 binary classification models (Logistic Regression, Naïve Bayes, KNearest Neighbors, SVC and Decision Trees), generation of confusion matrix comparing model scores and ROC curves comparing each model. 
 
 
-In my analysis, I found the best performing classification model for prediction of the target variable HeartDisease to be the Support Vector Machines (SVC) model, 
-with a model score of 0.86 (2.d.p.) and an ROC AUC score of 0.92.
+In my analysis, I have found the best performing classification model for prediction of the target variable HeartDisease to be the Support Vector Machines (SVC) model, 
+with a model score of 0.86 (2.d.p.) and an ROC AUC score of 0.92. 
+
+However, future work would be required to further optimise the hyperparameters for each model to ensure optimal model performance. 
 
 ## Acknowledgements:
 I would like to thank both Matt Williams and Chris Woods for their incredibly helpful tutorials. 
